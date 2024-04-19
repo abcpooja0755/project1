@@ -1,0 +1,1414 @@
+@font-face {
+    font-family: archia;
+    src: url(archia-light-webfont.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    cursor: pointer;
+   
+}
+#cursor{
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    background-color: #fff;
+    mix-blend-mode: difference;
+    
+
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5vw 8vw;
+    position: fixed;
+    z-index: 999;
+  mix-blend-mode:difference;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    gap:3.5vw;
+
+}
+#nav-part2>h4{
+    font-size: 13.5px;
+    font-family: "Archia", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+i{
+    display:none;
+    font-size: 2vw;
+    color:#fff;
+
+    
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    
+}
+
+#page1 h1{
+    font-family: archia;
+    position: absolute;
+    bottom: 20%;
+    font-weight: 100;
+    z-index: 9;
+    left: 10%;
+    font-size: 3.5vw;
+    color: #fff;
+    /* background-color: blue; */
+    width: 50%;
+   
+}
+#page1 h1::after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 50px;
+    animation: kuch 0.3s infinite linear;
+    background-color: #fff;
+}
+#page1 h1 span{
+    display: none;
+    font-family: archia;
+}
+@keyframes kuch {
+    100%{
+        opacity: 0;
+    }
+}
+
+
+#page1 video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 8vw 5vw;
+    background-color: white;
+}
+#page2 h2{
+    font-size: 1.3vw;
+    text-align: center;
+    font-family: "Archia", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+
+}
+#page2-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 6vw;
+
+}
+#left-page2{
+    height: 350px;
+    width: 37%;
+    background-color: rgb(237, 237, 237);
+    border-radius: 10px;   
+    position: relative;
+    overflow: hidden;
+
+}
+#blur{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 9;
+  
+}
+#left-page2 img{
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+#right-page2{
+    height: 400px;
+    width: 45%;
+  
+}
+#right-page2 h1{
+    font-size: 3vw;
+   font-family:"Archia", sans-serif;;
+   font-weight:100;
+   margin: 2vw 2vw;
+}
+#right-page2 p{
+    font-size: 1.3vw;
+    font-family: "Montreal", sans-serif;;
+    font-weight:100;
+    margin: 2.3vw;
+    letter-spacing: 1px;
+}
+#right-page2 button{
+    font-size: 1.1vw;
+    font-weight: 100;
+    padding: 12px 30px 12px 30px;
+    border-radius: 20px ;
+    border: 2.2px solid #000;
+    background-color: transparent;
+    margin: 0vw 3vw;
+}
+
+/*----------------------------Page3---------------------- */
+#page3{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    padding: 0 8.5vw;
+    background-color: white;
+
+}
+#page3-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+ 
+}
+#left-page3{
+    height: 350px;
+    width: 50%;
+    border-radius: 10px;   
+    position: relative;
+
+}
+#left-page3 h1{
+    font-size: 3vw;
+   font-family:"Archia", sans-serif;
+   font-weight:100;
+   margin: 2vw 2vw;
+   letter-spacing: 2px;
+}
+#left-page3 p{
+    font-size: 1.3vw;
+    font-family: "Montreal", sans-serif;;
+    font-weight:100;
+    margin: 2.3vw;
+    letter-spacing: 1px;
+}
+
+#left-page3 button{
+    font-size: 1.1vw;
+    font-weight: 100;
+    padding: 12px 30px 12px 30px;
+    border-radius: 20px ;
+    border: 2.2px solid #000;
+    background-color: transparent;
+    margin: 0vw 3vw;
+}
+
+#right-page3{
+    height: 350px;
+    width: 40%;
+    position: relative;
+   
+  
+}
+#right-page3 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+ 
+}
+
+/*-------------------------------Page 4--------------------------------------*/
+
+#page4{
+    width: 100%;
+   min-height:100vh;
+    background-image: url(./bg.png);
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 3vw;
+}
+#page4-top{
+    width: 100%;
+    height: 100px;
+   
+}
+#helmet{
+    width: 100%;
+}
+
+#page4-content1{
+    width: 100%;
+    text-align: center;
+  
+    
+}
+#page4-content1 h2{
+    font-size: 3.5vw;
+    font-family: archia;
+    font-weight: 100;
+    padding: 1vw;
+}
+#page4-content1 p{
+    font-size: 1.2vw;
+    font-family: archia;
+    margin: 2vw;
+    line-height: 28px;
+}
+#page4-content1 button{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-weight: 500;
+
+}
+
+#page4-content2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    padding: 2vw 9vw;
+   
+}
+#page4-content2 h5{
+    font-size: 1.8vw;
+    font-family: archia;
+    font-weight: 300;
+    
+}
+#page4-content2 video{
+    height: 87%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 10vw;
+
+}
+
+#page4-content3{
+    width: 100%;
+    height: 50vh;
+    position: relative; 
+    display: flex;
+    justify-content:space-around;
+    margin-top: 10vw;
+}
+
+
+#page4-content3-p1 video{
+    height: 72%;
+    border-radius: 30px;
+}
+#page4-content3-p2 h5{
+    font-size: 1.8vw;
+    font-family: archia;
+    font-weight: 500;
+}
+#page4-content3-p2 button{
+    padding: 1vw 1.5vw;
+    margin-top: 5vw;
+    border-radius: 30px;
+    font-size: 1vw;
+    font-family: archia;
+    font-weight: 700;
+    background-color: transparent;
+
+}
+
+
+#page4-content4{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    
+   
+}
+#page4-content4 h5{
+    font-size: 1.8vw;
+    font-family: archia;
+    font-weight: 500;
+    
+}
+#page4-content4 video{
+    height: 75%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-top: 10vw;
+
+}
+
+
+
+#page4-content5{
+    width: 100%;
+    height: 50vh;
+    position: relative; 
+    display: flex;
+    justify-content:space-around;
+    margin-top: 10vw;
+}
+
+
+#page4-content5-p1 video{
+    height: 72%;
+    border-radius: 30px;
+}
+#page4-content5-p2 h5{
+    font-size: 1.8vw;
+    font-family: archia;
+    font-weight: 500;
+}
+#page4-content5-p2 button{
+    padding: 1vw 1.5vw;
+    margin-top: 5vw;
+    border-radius: 30px;
+    font-size: 1vw;
+    font-family: archia;
+    font-weight: 700;
+    background-color: transparent;
+
+}
+
+
+/* ----------------------------------Page 5--------------------------------- */
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg");
+    background-size: cover;
+}
+#page5-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8vw 5vw;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+}
+#page5-info{
+    flex-shrink: 0;
+    width: 30vw;
+    height: 100%;
+   
+    color: #fff;
+}
+#page5-info h2{
+    font-family: archia;
+    font-size: 3vw;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+#page5-info p{
+    font-family: archia;
+    font-size: 1.3vw;
+    margin-bottom: 10px;
+    font-weight: 100;
+
+}
+#page5-info button{
+    
+    font-size: 1vw;
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-weight: 600;
+    color: white;
+}
+
+.page5-elems{
+    flex-shrink: 0;
+    height: 100%;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.182);
+    -webkit-mask-image: url("https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg");
+    -webkit-mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    backdrop-filter: blur(20px);
+    padding: 2vw;
+    margin: 0 3vw;
+
+}
+.page5-elems img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 1vw;
+}
+
+.page5-elems h2{
+    font-size: 2.5vw;
+    font-weight: 100;
+    font-family: archia;
+    padding: 1.5vw 1vw;
+}
+.page5-elems p{
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: archia;
+}
+
+#page5 #slider{
+    height: 5px;
+    width: 59%;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%,0);
+    overflow: hidden;
+}
+#page5 #slider-in{
+    height: 100%;
+    width: 17vw;
+    background-color: black;
+}
+
+
+/*--------------------------------- Page 6 --------------------------------- */
+#page6{
+    min-height:100vh;
+    width: 100%;
+    background-image: url(./contact_bg.jpg);
+    background-position:top;
+    background-size:cover;  
+    
+
+}
+#page6-top {
+    position: relative;
+    width: 100%;
+    height: 70px;  
+    top:.5vw;  
+}
+
+#page6-head{
+    padding-top: 9vw;
+    padding-left: 9vw;
+ 
+    
+}
+#page6-head h2{
+    font-size:3.2vw;
+    font-family: archia;
+    font-weight: 100;
+     
+}
+#page6-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 9vw;
+    border-bottom:1px solid black;
+
+}
+#page6-left{
+    width: 50%;
+    height: 50vh;    
+   
+}
+#page6-left h2{
+    font-size: 1.7vw;
+    font-weight: 100;
+    font-family: archia;
+    line-height: 2vw;
+   
+}
+#page6-right{
+    width: 40%;
+    height: 50vh;
+ 
+   
+}
+#page6-right p{
+    font-size: 1.1vw;
+    font-family: archia;
+    font-family: 400;
+    line-height: 1.7vw;
+    padding-bottom: 3vw;
+}
+#page6-right h2{
+    font-size: 1.3vw;
+    font-family: archia;
+    padding: 0 1vw;
+}
+
+
+
+#page6-content2{
+    width: 100%;
+    height: 100vh;
+    padding: 5vw;  
+   margin-bottom: 10vw;
+   
+}
+#page6-content2 h3{
+    padding: 1vw 5vw;
+    font-size: 1.3vw;
+    font-family: archia;
+ 
+  
+}
+
+#page6-three{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+      
+}
+#page6 #box{
+    background-color:#fff;
+    -webkit-mask-image: url("https://www.brain.space/wp-content/themes/brain.space/assets/bg/comp/headline-text-list_box-button-box_bg.svg" );
+    -webkit-mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-repeat: no-repeat;
+    height: 69vh ;
+    width: 30%;
+}
+
+#page6 #box h2{
+    font-size: 2vw;
+    font-family: archia;
+    position: relative;
+    top: 10%;
+    left:18%;
+    background-color: rgba(168, 167, 241, 0.414);
+    border-radius: 30px;
+    border: none;
+    padding: 1vw 2vw;
+    width: 50%;
+   
+    
+}
+#page6 #box p{
+    font-size: 1.1vw;
+    position: relative;
+    top: 20%;
+    left: 18%;
+    font-family: archia;
+    font-weight: 500;
+}
+
+
+
+#page6 #box h1{
+    font-size: 2vw;
+    font-family: archia;
+    position: relative;
+    top: 10%;
+    left:15%;
+    background-color:#8ed2fc67;;
+    border-radius: 30px;
+    border: none;
+    padding: 1vw 2vw;
+    width: 60%;
+    
+    
+}
+
+
+#page6 #box p{
+    font-size: 1.1vw;
+    position: relative;
+    top: 20%;
+    left: 18%;
+    font-family: archia;
+    font-weight: 500;
+}
+
+
+
+#page6 #box h4{
+    font-size: 2vw;
+    font-family: archia;
+    position: relative;
+    top: 10%;
+    left:15%;
+    background-color:#ff6a0031;
+    border-radius: 30px;
+    border: none;
+    padding: 1vw 2vw;
+    width: 60%;
+ 
+}
+
+#page6-content2 h5{
+    font-size: 1.4vw;
+    font-family: archia;
+    text-align: center;
+    padding: 5vw ;
+    font-weight: 100;
+
+}
+
+#page6-content2  button{
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    font-family: archia;
+    font-weight: 700;
+    border-radius: 30px ;
+    border: 2px solid black;
+    background-color: transparent;
+    margin-left: 5vw ;
+
+}
+
+
+
+/*----------------------------------- Page 7 --------------------------- */
+#page7{
+    width: 100%;
+    min-height: 100vh; 
+    padding-bottom: 5vw;
+}
+#page7 h1{
+    font-size: 1.4vw ;
+    font-family: archia;
+    text-align: center;
+    padding: 7vw;
+    letter-spacing: 8px;
+    
+}
+#page7-top{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#page7-left h2{
+    font-size: 3vw;
+    font-family: archia;
+    padding-bottom: 2vw;
+    font-weight: 300;
+}
+#page7-left p{
+    font-size: 1.2vw ;
+    font-family: archia;
+}
+#page7-right img{
+    height: 30vh;
+}
+
+#page7-bottom{
+    width: 100%;
+    height: 60vh;   
+   
+}
+#page7-three{
+   display: flex;
+   justify-content:center;
+}
+
+#page7-three  img{
+    height: 60px;
+    padding: 0 7vw;
+  
+}
+#page7-three p{
+    font-size: 0.8vw;
+    font-family: archia;
+    text-align: center;
+    padding: 2vw;
+}
+
+#page7-four{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+}
+
+#page7-four  img{
+    height: 70px;
+    padding: .3vw 8vw;
+  
+}
+#page7-four p{
+    font-size: 0.8vw;
+    font-family: archia;
+    text-align: center;
+    padding: 1vw;
+}
+
+#page7-bottom button{
+    padding: 1vw 2.5vw;
+    margin-left: 10%;
+    font-size: 1vw;
+    border-radius: 30px ;
+    border: 2px solid black;
+    background-color: transparent;
+    
+}
+
+/*---------------------------------- Page 8 ------------------------------*/
+
+#page9{
+    width: 95%;
+    height: 420vh;
+    background:conic-gradient(at 0 0,rgb(255, 228, 233),aliceblue,rgb(205, 243, 255),rgb(195, 255, 195),lightyellow,rgb(251, 226, 230));;
+    margin-left: 2.6vw;
+    position: relative;
+    padding: 2vw;
+    border-radius: 20px;
+}
+#page9 #img{
+    width: 125px;
+    position: absolute;
+    bottom: 80px;
+    left: 73%;
+    transform: translateX(-50%);
+}
+#page9 #asset{
+    width: 18%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#page9 .imgdiv{
+    width: 125px;
+    height: 125px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: .8%;
+    left: .8%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page9 .imgdiv img{
+    width: 70px;
+   
+}
+#page9 #img:nth-child(2){
+    width: 150px;
+    position: absolute;
+    bottom: 85px;
+    left: 83%;
+    transform: translateX(-50%);
+}
+#page9 #img:nth-child(3){
+    width: 150px;
+    position: absolute;
+    bottom: 85px;
+    left: 94%;
+    transform: translateX(-50%);
+}
+
+#page9 #page9-1{
+    width: 100%;
+    height: 80vh;
+    /* background-color: rgb(198, 144, 248); */
+    position: relative;
+    display: flex;
+}
+#page9 #page9-1 h2{
+    font-size: 1.4vw;
+    font-family: archia;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%);
+    letter-spacing: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+#page9 #page9-1 #page9-1-left{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(250, 106, 106); */
+    padding: 15vw 3vw 3vw 3vw;
+}
+#page9 #page9-1 #page9-1-left h1{
+    font-size: 3.2vw;
+    font-family:archia;
+    font-weight: 300;
+}
+#page9 #page9-1 #page9-1-right{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(157, 248, 157); */
+    padding: 15vw 3vw 3vw 3vw;
+}
+#page9 #page9-1 #page9-1-right > h3{
+    font-size: 1.9vw;
+    font-family: archia;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+#page9 #page9-1 #page9-1-right p{
+    font-size: 1.3vw;
+}
+#page9 #page9-2{
+    width: 100%;
+    height: 167vh;
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    z-index: 9;
+    display: flex;
+    padding: 2vw 4vw 4vw 4vw;
+}
+#page9 #page9-2 #h5{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    /* top: ; */
+    transform: translateX(-50%);
+}
+#page9 #page9-2 #h5 h5{
+    font-size: 2vw;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    position: relative;
+    top: 45px;
+}
+#page9 #page9-2 #page9-2-left{
+   width: 100%;
+   height: 90%;
+   /* background-color: orange;  */
+   margin-top: 110px;
+}
+
+#page9 #page9-2 #page9-2-left #bar{
+    width: 75%;
+    height: 30vh;
+    /* background-color: maroon; */
+    display: flex;
+    padding: 6vw 3vw 0vw 14vw;
+    border-bottom: 0.2px solid #0000004a;
+}
+#page9 #page9-2 #page9-2-left #bar:nth-child(5){
+    width: 95%;
+    height: 30vh;
+    /* background-color: maroon; */
+    display: flex;
+    padding: 6vw 3vw 0vw 12vw;
+    border: none;
+}
+#page9 #page9-2 #page9-2-left #bar .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    position: relative;
+    bottom: 18px;
+}
+
+#page9 #page9-2 #page9-2-left #bar h4{
+    font-size: 1vw;
+    font-family: archia;
+    font-weight: 300;
+
+}
+#page9 #page9-2 #page9-2-right{
+    margin-top: 110px;
+    width: 100%;
+    height: 90%;
+    /* background-color: rgb(255, 0, 195);  */
+ }
+
+ #page9 #page9-2 #page9-2-right #bar{
+    width: 75%;
+    height: 30vh;
+    /* background-color: maroon; */
+    display: flex;
+    padding: 6vw 3vw 0vw 12vw;
+    border-bottom: .2px solid #0000004a;
+}
+#page9 #page9-2 #page9-2-right #bar:nth-child(5){
+    width: 95%;
+    height: 30vh;
+    /* background-color: maroon; */
+    display: flex;
+    padding: 6vw 3vw 0vw 12vw;
+    border: none;
+}
+#page9 #page9-2 #page9-2-right #bar .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    position: relative;
+    bottom: 18px;
+}
+
+#page9 #page9-2 #page9-2-right #bar h4{
+    font-size: 1vw;
+    font-family: archia;
+    font-weight: 300;
+}
+
+
+
+#page9 #page9-3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: tomato; */
+    margin-top: 200px;
+    display: flex;
+}
+
+#page9 #page9-3 #page9-3-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: tomato; */
+    padding: 5vw 3vw;
+}
+#page9 #page9-3 #page9-3-left h1{
+    font-size: 3vw;
+    font-family: archia;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+#page9 #page9-3 #page9-3-left p{
+    font-size: 1.4vw;
+    font-weight: 200;
+    margin-bottom: 40px;
+    line-height: 1.9vw;
+}
+#page9 #page9-3 #page9-3-left h4{
+    font-size: .9vw;
+    margin-bottom: 30px;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    width: 72%;
+    padding: 2px;
+    text-align: center;
+}
+#page9 #page9-3 #page9-3-left h4:nth-child(3){
+    font-size: .9vw;
+    margin-bottom: 30px;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 72%;
+    padding: 2px;
+}
+#page9 #page9-3 #page9-3-left h4:nth-child(6){
+    font-size: .9vw;
+    margin-bottom: 30px;
+    font-weight: 300;
+    border: none;
+    width: 72%;
+    padding: 2px;
+    text-align: center;
+}
+#page9 #page9-3 #page9-3-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page9 #page9-3 #page9-3-right img{
+    width: 75%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#page10{
+    width: 95%;
+    height: 150vh;
+    background: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 2.6vw;
+    border-bottom: 20px;
+    position: relative;
+    -webkit-mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/space-mission-box_bg.jpg.svg);
+    -webkit-mask-size: cover;
+    -webkit-mask-position: top;
+    position: relative;
+    bottom: 200px;
+    border-radius: 20px;
+}
+
+
+#page10 .head{
+    width: 100%;
+    height: 100px;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 240px;
+}
+#page10 .head h3{
+    font-size: 1.6vw;
+    font-family: archia;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#page10 #box{
+    width: 100%;
+    height: 65vh;
+    /* background-color: rgb(49, 128, 0); */
+    display: flex;
+    margin-top: 19%;
+}
+#page10 #box #left{
+    width: 100%;
+    height: 100%;
+    /* background-color: purple; */
+    padding: 4vw 3vw 4vw 5.5vw;
+}
+#page10 #box #left h1{
+    font-size: 3vw;
+    font-family: "archial";
+    margin-bottom: 40px;
+}
+#page10 #box #left p{
+    font-size: 1.4vw;
+    margin-bottom: 20px;
+    font-weight: 200;
+    width: 90%;
+}
+#page10 #box #left a{
+    font-size: 1vw;
+    color: #000;
+    font-size: 1.4vw;
+}
+
+#page10 #box #right{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(128, 43, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 75px;
+} 
+
+#page10 #box #right video{
+    width: 72%;
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+#page11{
+    width: 100%;
+    height: 85vh;
+    /* background-color: palevioletred; */
+    position: relative;
+}
+
+#page11 #head{
+    width: 100%;
+    height: 60px;
+    /* background-color: fuchsia; */
+    position: absolute;
+    top: -100px;
+}
+
+#page11 #head h1{
+    font-size: 1.5vw;
+    letter-spacing: 5px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#page11 #bar1{
+    width: 100%;
+    height: 130px;
+    /* background-color: darkred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 50px;
+}
+
+#page11 #bar1 #box{
+    width: 150px;
+    height: 100%;
+    /* background-color: rgb(241, 14, 14); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page11 #bar1 #box img{
+    width: 130px;
+}
+
+
+#page11 h3{
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+}
+
+#page11 button{
+    font-size: 18px;
+    padding: 13px 28px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 155px;
+    left: 130px;
+}
+
+
+#page12{
+    width: 100%;
+    height: 150vh;
+    background: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/contact_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+
+}
+#page12 img{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#page12 #left{
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+    padding: 12vw 3vw 12vw 8.5vw;
+    position: relative;
+}
+#page12 #left h2{
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: archia;
+}
+
+#page12 #left p{
+   font-size: 1.4vw; 
+   color: #fff;
+   letter-spacing: 1px;
+}
+
+#page12 #left h4{
+    font-size: 1.3vw;
+    font-family:archia;
+    position: absolute;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    bottom: 50px;
+    left: 100px;
+    width: 30%;
+    z-index: 99;
+}
+
+#page12 #right{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(238, 213, 130); */
+    padding: 12vw 12vw 3vw 12vw; 
+}
+#page12 #right select{
+    display: block;
+    padding: 1.7vw 4.4vw;
+    border-radius: 20px;
+    text-align: start;
+    border: none;
+    margin-bottom: 20px;
+    color: #0000009b;
+    font-size: 1.4vw;
+}
+#page12 #right input{
+    display: block;
+    padding: 1.7vw 2.5vw;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.4vw;
+}
+
+#page12 #right button{
+    font-size: 18px;
+    padding: 13px 28px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background-color: transparent;
+    position: relative;
+    top: 25px;
+   
+}
+#page12 #right h6{
+    position: relative;
+    top: 50px;
+    width: 80%;
+    font-size: .8vw;
+}
+
+#page13{
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+}
+
+#page13 #bar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 110px;
+    padding: 0 6vw 0vw 2vw;
+}
+
+#page13 #bar #left{
+    width: 25%;
+    height: 100%;
+    /* background-color: forestgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page13 #bar #left img{
+    width: 180px;
+}
+
+#page13 #bar #right{
+    background-color: #fff;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#page13 #bar #right a{
+    font-size: .7vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-family: archia;
+}
+
+#page13 #bar2{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 200px;
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page13 #bar2 #left{
+    width: 12%;
+    height: 100%;
+    /* background-color: #F8F8F8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+#page13 #bar2 #middle{
+   width: 58%; 
+   height: 100%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page13 #bar2 #right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 20%; 
+   height: 100%;
+}
+#page13 #bar2 #right a{
+    text-decoration: none;
+}
+#page13 #bar2 #right a i{
+    font-size: 1.5vw;
+    margin: 10px;
+    color: #000;
+}
